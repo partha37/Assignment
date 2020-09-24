@@ -1,0 +1,23 @@
+[
+    {
+    "name": "Padmini hotels",
+    "city": "Bangalore",
+    "type": "veg",
+    "cuisine": ["Indian"]
+
+},
+{
+    "name": "Partha hotels",
+    "city": "Bangalore",
+    "type": "Nonveg",
+    "cuisine": ["Indian","chinese"]
+
+},
+{
+    "name": "Sohel hotels",
+    "city": "Kolkota",
+    "type": "Nonveg",
+    "cuisine": ["Indian"]
+
+}
+]

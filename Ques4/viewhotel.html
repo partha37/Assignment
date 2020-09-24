@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./file.js">
+
+function ajaxFunction(){
+		ajaxRequest = new XMLHttpRequest();   // opera ,mozilla
+        // target = document.getElementById("userid"); 
+        var url = "http://localhost:3000/showhotel"; 
+        ajaxRequest.open("GET", url, true); 
+        ajaxRequest.send(null); 
+        ajaxRequest.onreadystatechange = processRequest();
+      }
+ function processRequest() {
+  if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) { 
+      document.getElementById("dynamo").innerHTML=ajaxRequest.responseText;
+  }
+ }
+
+    </script>
+</head>
+<body>
+
+        <button name="listhotel" type="submit" onclick="ajaxFunction()">Show Hotels</button>
+    </br>
+    </br>
+     <form action="http://localhost:3000/hotelcity" method="get" target="_blank">
+        <button name="hotelcity" type="submit" >Hotel By city</button>
+     </form>
+    </br>
+    </br>
+     <select id="mySelect" onclick="dropboxs()">
+      <option value=''>--select</option>   
+      <option value="0">Hotel by type
+      <option value="1">Hotel by cuisine
+     </select>
+     <p>Details:</p>
+
+    <div id="dynamo"></div>
+</body>
+</html>

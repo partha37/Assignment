@@ -1,0 +1,23 @@
+[
+    {
+        "uname": "parthi",
+        "uid": 83,
+        "city":"bangalore",
+        "email":"parthi@gmail.com",
+        "phone": 12345
+    },
+    {
+        "uname": "padmini",
+        "uid": 82,
+        "city":"vellore",
+        "email":"padmini@gmail.com",
+        "phone": 54321
+    },
+    {
+        "uname": "padhu",
+        "uid": 10,
+        "city":"chennai",
+        "email":"priya@gmail.com",
+        "phone": 67890
+    }
+]
